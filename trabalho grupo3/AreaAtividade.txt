@@ -1,0 +1,10 @@
+prog1;programação;desenvolvimento de todo o tipo de software
+coz1;restauração;realização de pratos
+sec1;escritório;trabalho de secretaria
+mod1;modelo;fotos
+cab1;estilo;todos os cortes
+pin1;pintura;retratos
+mas1;massagem;todos os problemas 
+mus1;musico;sonoridade
+seg1;segurança;proteção maxima
+pol1;politica;enganadores

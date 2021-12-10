@@ -1,0 +1,47 @@
+Programador;Capacidade de desenvolver software;Apto na área da programação para qualquer tipo de software e sistema
+Programador;Capacidade de desenvolver software;Apto na área da programação para qualquer tipo de software e sistema
+Programador;Capacidade de desenvolver software;Apto na área da programação para qualquer tipo de software e sistema
+Cozinheiro;Realização de qualquer tipo de prato;Apto na área da restauração
+Cozinheiro;Realização de qualquer tipo de prato;Apto na área da restauração
+Cozinheiro;Realização de qualquer tipo de prato;Apto na área da restauração
+Secretário;Disponível para qualquer trabalho de escritório;Apto para trabalho
+Secretário;Disponível para qualquer trabalho de escritório;Apto para trabalho
+Secretário;Disponível para qualquer trabalho de escritório;Apto para trabalho
+Modelo;Disponível para qualquer sessão;Apto
+Modelo;Disponível para qualquer sessão;Apto
+Modelo;Disponível para qualquer sessão;Apto
+Cabeleireiro;Especializado em todos os cortes,unisexo;Apto
+Cabeleireiro;Especializado em todos os cortes,unisexo;Apto
+Cabeleireiro;Especializado em todos os cortes,unisexo;Apto
+Pintor;Especializado em retratos;Apto
+Pintor;Especializado em retratos;Apto
+Pintor;Especializado em retratos;Apto
+Massagista;Especializado em massagens;Apto
+Massagista;Especializado em massagens;Apto
+Massagista;Especializado em massagens;Apto
+Musico;Especializado em instrumentos;Apto
+Musico;Especializado em instrumentos;Apto
+Musico;Especializado em instrumentos;Apto
+Segurança;Especializado em proteção;Apto
+Segurança;Especializado em proteção;Apto
+Segurança;Especializado em proteção;Apto
+Politico;Especializado na área;Apto
+Politico;Especializado na área;Apto
+Politico;Especializado na área;Apto
+Politico;Especializado na área;Apto
+Engano;Especialista em enganar;Apto
+Engano;Especialista em enganar;Apto
+Engano;Especialista em enganar;Apto
+Engano;Especialista em enganar;Apto
+mestre politica;Especializado na área;Apto
+mestre politica;Especializado na área;Apto
+mestre politica;Especializado na área;Apto
+mestre politica;Especializado na área;Apto
+mestre politica;Especializado na área;Apto
+roubo;Especializado na área;Apto
+roubo;Especializado na área;Apto
+roubo;Especializado na área;Apto
+roubo;Especializado na área;Apto
+roubo;Especializado na área;Apto
+
+

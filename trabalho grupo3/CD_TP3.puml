@@ -1,0 +1,321 @@
+@startuml
+skinparam linetype ortho
+
+
+class AreaAtividade {
+-m_strCodigo : String
+-m_strDescricaoBreve : String
+-m_strDescricaoDetalhada : String
+-CODIGO_OMISSAO : String
+-DESCRICAO_BREVE_CODIGO_OMISSAO  : String
+-DESCRICAO_DETALHADA_OMISSAO : String
++AreaAtividade(String,String,String)
++AreaAtividade(AreaAtividade)
++AreaAtividade()
++hasId(String)
++getCodigo()
++getM_strDescricaoBreve()
++getM_strDescricaoDetalhada()
++equals(Object)
++toString()
+}
+
+class GrauProficiencia{
+-designacao : String
+-valor : int
+-DESIGNACAO_POR_CODIGO_OMISSAO : String
+-VALOR_POR_OMISSAO : int
++GrauProficiencia(String, int)
++GrauProficiencia(GrauProficiencia)
++GrauProficiencia()
++getDesignacao()
++setDesignacao(String)
++setValor(int)
++getValor()
++toString()
+}
+
+class CompetenciaTecnica{
+-m_strId : String
+-m_strDescricaoBreve : String
+-m_strDescricaoDetalhada : String
+-m_oAreaAtividade : AreaAtividade
+-m_oGrau : GrauProficiencia
++CompetenciaTecnica(String,String,String,AreaAtividade,GrauProficiencia)
++CompetenciaTecnica(String,String,String)
++CompetenciaTecnica(CompetenciaTecnica)
++hasId(String)
++equals(Object)
++toString()
++getM_strId()
++getM_oAreaAtividade()
++getM_strDescricaoBreve()
++getM_strDescricaoDetalhada()
++getM_lstGrau()
++setM_strId(String)
++setM_strDescricaoBreve(String)
++setM_strDescricaoDetalhada(String)
++setM_oAreaAtividade(AreaAtividade)
++setM_lstGrau(GrauProficiencia)
+}
+
+class Data{
+-ano : int
+-mes : int
+-dia : int
+-ANO_POR_OMISSAO : int
+-MES_POR_OMISSAO : int
+-DIA_POR_OMISSAO : int
+-nomeDiaDaSemana : String[]
+-diasPorMes : int[]
+-nomeMes : String[]
++Data(int,int,int)
++Data(Data)
++Data()
++getAno() : int
++getMes() : int
++getDia() : int
++setData(int,int,int) : void
++toString() : String
++toAnoMesDiaString() : String
++equals(Object) : boolean
++compareTo(Data) : int
++diaDaSemana() : String
++isMaior(Data) : boolean
++diferenca(Data) : int
++{static}isAnoBissexto(int) : boolean
++{static}dataAtual() : Data
+-contaDias() : int
+}
+
+class Freelancer{
+-str_nome : String
+-str_NIF : String
+-str_telf : String
+-str_email : String
+-NOME_OMISSAO : String
+-NIF_OMISSAO : String
+-TELF_OMISSAO : String
+-EMAIL_OMISSAO : String
+-listaCompt : List<CompetenciaTecnica>
++Freelancer(String,String,String,String)
++Freelancer(Freelancer)
++Freelancer()
++getStr_emaill() : String
++getStr_Nome() : String
++getStr_NIF() : String
++getStr_telf() : String
++getListaCompt() : List<CompetenciaTecnica>
++setStr_email(String) : void
++setStr_nome(String) : void
++equals(Object) : boolean
++toString() : String
+}
+
+class Candidatura{
+-dataCand : Data
+-custo : double
+-dias : int
+-textoMotivacao : String
+-textoApresentacao : String
+-freelancer : Freelancer
+-classificacao : int
++Candidatura(Data,double,int,String,String,Freelancer)
++Candidatura(Data,double,int,String,String)
++getDataCand() : Data
++getCusto() : double
++getDias() : int
++getTextoMotivacao() : String
++getTextoApresentacao() : String
++getFreelancer() : Freelancer
++getClassificacao() : int
++setFreelancer() : void
++setClassificacao() : void
++equals(Object) : boolean
++mediaGrau() : double
++desvioPadrao() : double
+}
+
+class Anuncio{
+-dtInicioPublicacao : Data
+-dtFimPublicacao : Data
+-dtInicioCandidatura : Data
+-dtFimCandidatura : Data
+-dtInicioSeriacao : Data
+-dtFimSeriacao : Data
+-DATA_OMISSAO : Data
+-listaCandidatura : List<Candidatura>
++Anuncio(Data,Data,Data,Data,Data,Data)
++Anuncio(Anuncio)
++Anuncio()
++getDtInicioPublicacao() : Data
++getDtFimPublicacao() : Data
++getDtInicioCandidatura() : Data
++getDtFimCandidatura() : Data
++getDtInicioSeriacao() : Data
++getDtFimSeriacao() : Data
++toString() : String
+}
+
+
+interface Seriavel{
++compare(Candidatura,Candidatura) : int
++equals(Object) : boolean
+}
+
+
+class Seriacao1{
++compare(Candidatura,Candidatura) : int
++equals(Object) : boolean
+}
+
+class Seriacao2{
++compare(Candidatura,Candidatura) : int
++equals(Object) : boolean
+}
+
+class Colaborador{
+-nome : String
+-funcao : String
+-telefone : String
+-email : String
+-listaTarefas : List<Tarefa>
++Colaborador(String,String,String,String)
++Colaborador(Colaborador)
++hasId(String) : boolean
++getNome() : String
++getFuncao() : String
++getTelefone() : String
++getEmail() : String
++getListaTarefas() : List<Tarefa>
++equals(Object) : boolean
++toString() : String
+}
+
+class Tarefa{
+-referencia : String
+-designacao : String
+-descricaoInformal : String
+-descricaoCaracterTecnico : String
+-duracao : double
+-custo : double
+-anuncio : Anuncio
+-listaCompt : List<CompetenciaTecnica>
++Tarefa(String,String,String,String,double,double,Anuncio)
++Tarefa(String,String,String,String,double,double)
++getReferencia() : String
++getDesignacao() : String
++getDescricaoInformal() : String
++getDescricaoCaracterTecnico() : String
++getDuracao() : double
++getCusto() : double
++getAnuncio() : Anuncio
++getListaCompt() : List<CompetenciaTecnica>
++setReferencia(String) : void
++setDesignacao(String) : void
++setDescricaoInformal(String) : void
++setDescricaoCaracterTecnico(String) : void
++setDuracao(double) : void
++setCusto(double) : void
++setAnuncio(Anuncio) : Anuncio
++setListaCompt(List<CompetenciaTecnica> : List<CompetenciaTecnica>
++equals(Object) : boolean
++toString() : String
+}
+
+class LerFicheirosTexto{
+-{static}NOME_FICH_COLABORADOR : String
+-{static}NOME_FICH_TAREFA : String
+-{static}NOME_FICH_ANUNCIO : String
+-{static}NOME_FICH_AREA_ATIVIDADE : String
+-{static}NOME_FICH_CANDIDATURA : String
+-{static}NOME_FICH_CT: String
+-{static}NOME_FICH_FREELANCER: String
+-{static}NOME_FICH_GRAU: String
+-{static}listaColaborador : List<Colaborador>
+-{static}listaTarefa: List<Tarefa>
+-{static}listaAnuncio : List<Anuncio>
+-{static}listaAreasAtividade : List<AreaAtividade>
+-{static}listaCandidatura : List<Candidatura>
+-{static}listaCT : List<CompetenciaTecnica>
+-{static}listaFreelancer : List<Freelancer>
+-{static}listaGrau : List<GrauProficiencia>
++{static}lerFicheirosCriacao() : void
++{static}criarObjetos() : void
++{static}lerFichColaborador() : void
++{static}lerFichTarefa() : void
++{static}lerFichAnuncio() : void
++{static}lerFichAreaAtividade() : void
++{static}lerFichCandidatura() : void
++{static}lerFichCT() : void
++{static}lerFichFreelancer() : void
++{static}lerFichGrau() : void
++{static}criarCT() : void
++{static}criarFree() : void
++{static}criarCandidatura() : void
++{static}criarAnuncio() : void
++{static}criarTarefa() : void
++{static}criarColaborador() : void
++{static}getListaColaborador() : List<Colaborador>
++{static}getListaTarefa() : List<Tarefa>
++{static}getListaAnuncio() : List<Anuncio>
++{static}getListaCandidatura() : List<Candidatura>
++{static}getListaFreelancer() : List<Freelancer>
+}
+
+
+LerFicheirosTexto o-> AreaAtividade
+LerFicheirosTexto o-> Anuncio
+LerFicheirosTexto o-> Tarefa
+LerFicheirosTexto o-> Colaborador
+LerFicheirosTexto o-> Candidatura
+LerFicheirosTexto o-> Freelancer
+LerFicheirosTexto o-> CompetenciaTecnica
+LerFicheirosTexto o-> GrauProficiencia
+LerFicheirosTexto .> AreaAtividade
+LerFicheirosTexto .> Anuncio
+LerFicheirosTexto .> Tarefa
+LerFicheirosTexto .> Colaborador
+LerFicheirosTexto .> Candidatura
+LerFicheirosTexto .> Freelancer
+LerFicheirosTexto .> CompetenciaTecnica
+LerFicheirosTexto .> GrauProficiencia
+
+
+
+CompetenciaTecnica o-> AreaAtividade
+CompetenciaTecnica .> AreaAtividade
+CompetenciaTecnica o-> GrauProficiencia
+CompetenciaTecnica .> GrauProficiencia
+
+Freelancer o-> CompetenciaTecnica
+Freelancer .> CompetenciaTecnica
+
+Seriacao1 .|> Seriavel
+Seriacao1 .> Candidatura
+
+Seriacao2 .|> Seriavel
+Seriacao2 .|> Candidatura
+
+Seriavel .> Candidatura
+
+Candidatura o-> Freelancer
+Candidatura .> Freelancer
+Candidatura o-> Data
+Candidatura .> Data
+
+Anuncio o-> Data
+Anuncio .> Data
+Anuncio o-> Candidatura
+Anuncio .> Candidatura
+
+Tarefa o-> Anuncio
+Tarefa .> Anuncio
+Tarefa o-> CompetenciaTecnica
+Tarefa .> CompetenciaTecnica
+
+Colaborador o-> Tarefa
+Colaborador .> Tarefa
+
+
+@enduml

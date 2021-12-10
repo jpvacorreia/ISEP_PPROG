@@ -1,0 +1,39 @@
+2020;05;15;50;4;Sempre quis trabalhar nesta empresa;Dedicado e possuo boas capacidades nesta área
+2020;05;15;60;5;Adoro o que faço;Dedicado e possuo ótimas capacidades nesta área, trabalho bem em equipa
+2020;05;13;90;8;Projecto motiva-me;Mestrado e Doutoramento nesta área
+2020;05;15;70;4;Adoraria ser um bónus para a empresa;Mestre na área
+2020;05;16;100;8;Adoro o que faço;Muito experiente
+2020;05;15;40;3;Projecto motiva-me;Iniciante
+2020;05;15;50;4;Ganhar experiencia;Iniciante
+2020;05;16;100;3;Sempre gostei desta empresa;Mestre
+2020;05;17;70;5;Projecto motiva-me;Experiente
+2020;05;15;30;4;Quero ganhar experiência;Inexperiente
+2020;05;15;60;4;Adoro os fotografos;Modelo conhecido
+2020;05;15;80;4;Gostaria de representar esta agência;Modelo conhecido mundialmente
+2020;05;4;100;5;Muito gosto em elevar esta empresa;Muito experiente
+2020;05;3;70;4;Projecto cativa-me;Experiente
+2020;05;2;30;1;Otimo lugar para aprender;Inexperiente
+2020;05;15;1000;3;Adorava espalhar a minha arte para esta companhia;Gênio
+2020;05;11;200;2;Gostava de aprender com os melhores; Inexperiente
+2020;05;15;500;3;Projecto cativa-me;Experiente
+2020;05;12;100;4;Sede por aprender;Inexperiente
+2020;05;12;130;4;Ajudar as pessoas;Experiente
+2020;05;15;160;4;Bem estar geral;Mestre
+2020;05;18;2000;5;Espalhar o meu talento musical;Mestre
+2020;05;15;1200;5;Gosto desta banda;Bom
+2020;05;15;500;5;Aprender com os melhores;Iniciante
+2020;05;15;200;3;Proteger todos;Bom
+2020;05;15;150;3;Ganhar Experiência;Iniciante
+2020;05;15;300;3;Evitar os piores acontecimentos;Mestre
+2020;05;20;60;3;Enganar bem os Portugueses;Experiente
+2020;05;20;50;3;Mandar umas piadas na assembleia;Experiente
+2020;05;20;60;3;Criticar os ciganos;Experiente
+2020;05;23;60;3;Fazer campanhas;Experiente
+2020;05;20;60;3;Meter dinheiro para o bolso;Experiente
+2020;05;20;60;3;Aquecimento global é mito;Experiente
+2020;05;20;50;3;Coronavirus não nos afeta;Experiente
+2020;05;20;60;3;DINHEIRO;Experiente
+2020;05;26;60;3;Fazer realmente algo bom;Experiente
+
+
+

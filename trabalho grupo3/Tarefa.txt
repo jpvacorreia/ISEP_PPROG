@@ -1,0 +1,11 @@
+programacao;jogos;programador design;licen eng informatica;3;60
+alimentacao;gourmet;chefe cozinha;curso cozinha;5;1000
+escritorio;empresa;secretário;conhecimento area;4;100
+moda;ModelsV;modelo;curso modelo;4;500
+estilo;cabeleireiro;privado;curso cabeleireiro unisexo;3;100
+arte;museu porto;artista;curso artes;5;700
+saude;massagens;massagista;curso massagista;3;300
+arte;musica;musico;licenciatura musica;3;2000
+protecao;discoteca;seguranca;auto-defesa;3;200
+deputado;politica;governar;licenciatura e mentiroso;3;2000
+candidato presidente;politica;governar;licenciatura e ladrão;3;10000

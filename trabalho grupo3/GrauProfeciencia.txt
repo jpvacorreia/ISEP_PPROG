@@ -1,0 +1,4 @@
+Incapaz;0
+Capaz;1
+Boa qualidade;2
+Excelente;3

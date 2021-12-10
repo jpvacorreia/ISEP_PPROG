@@ -1,0 +1,5 @@
+Paulo; seriação; 934323254; paulo@pprog.com
+João; seriação; 968997456; joao@pprog.com
+Óscar; seriação; 911979002; oscar@pprog.com
+Marcelo;seriacao;900011129;marcelo@pt.com
+

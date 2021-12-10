@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.dn_tp3_1191513_1181600.ui.JanelaPrincipalUI">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <BorderPane prefHeight="370.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <top>
+                  <HBox prefHeight="31.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Colaborador ">
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding></Label>
+                        <ComboBox fx:id="cmbColaborador" onAction="#handleComboBoxAction" prefWidth="150.0" />
+                        <Button fx:id="btnCandidaturas" mnemonicParsing="false" onAction="#getCandidaturasAction" text="Candidaturas">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </top>
+               <center>
+                    <TableView fx:id="tblTarefas" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="colReferencia" prefWidth="75.0" text="Referência" />
+                      <TableColumn fx:id="colDesignacao" prefWidth="75.0" text="Designação" />
+                        <TableColumn fx:id="colDescInformal" prefWidth="150.0" text="Descrição Informal" />
+                        <TableColumn fx:id="colDescTecnica" prefWidth="133.0" text="Descrição Técnica" />
+                        <TableColumn fx:id="colDuracao" prefWidth="92.0" text="Duração (dias)" />
+                        <TableColumn fx:id="colCusto" prefWidth="75.0" text="Custo (€)" />
+                    </columns>
+                  </TableView>
+               </center>
+            </BorderPane>
+         </center></BorderPane>
+   </center>
+</BorderPane>

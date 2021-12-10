@@ -1,0 +1,64 @@
+Não é necessário implementar tudo direitinho como está o SD do UC10 de ESOFT. Há simplificações que se podem fazer
+2 tipos de seriação. Utilizador escolhe a seriação.
+Tarefa, o freelancer já tem as competencias tecnicas. Não é necessário confirmar as competencias tecnicas!!!!!
+
+documento com classes, métodos, explicar porque criamos a interface que criamos e as nossas ideias, porque é que as classes de
+seriação têm os métodos abstract.
+
+
+
+	IMPLEMENTAR EM JAVA O CASO DE USO 10: "SERIAR ANÚNCIO";
+	\
+	 \
+	   ---> USAR DIAGRAMA DE CLASSES DESSE CASO DE USO PARA IMPLEMENTAR EM JAVA;
+	   
+	   
+	 IMPLEMENTAÇÃO
+	 
+		 DOIS TIPOS DE SERIAÇÃO, seguir os critérios: 	1)	SERIAÇÃO 1 (interface??)
+															a) Maior média dos níveis de proficiência em cada uma das competências técnicas exigidas para a tarefa; (interface?)
+															b) Preço mais baixo; (interface comparator?)
+															c) Proposta registada mais cedo; 
+															
+														2) SERIAÇÃO 2 (interface??)
+															a) Maior média dos níveis de proficiência em cada uma das competências técnicas exigidas para a tarefa; (interface?)
+															b) Menor desvio padrão dos níveis de proficiência em cada uma das competências técnicas exigidas para a tarefa;
+															c) Preço mais baixo; (interface comparator?)
+															d) Proposta registada mais cedo; 
+															
+															
+	Contudo,  ao  longo  do  tempo,  prevê-se  a  adoção  de  mais  e  variados  tipos  de seriação,
+	como tal, pretende-se que a adição de novos tipos de seriação esteja facilitada e, se possível, possa até ser realizada por terceiros.
+	No  processo  de  seriação  apenas  devem ser  considerados  os freelancers (candidatos) que possuam o  grau  de  proficiência  mı́nimo
+	exigido  a  todas  as competências técnicas obrigatórias para a tarefa em causa.
+	
+	Interface com o utilizador da aplicação:	1) visualização de todas as tarefas publicadas pelo colaborador e a seleção de uma delas;
+												2) visualização das candidaturas à realização da tarefa selecionada;
+												3) o despoletar do processo de seriação; (o processo a ser feito)
+												4) visualização do resultado da seriação;
+	
+	
+	De  forma  a  que  a  aplicação  desenvolvida  seja  funcional,  será  necessário  criar objetos  de  várias  classes. 
+	A  implementação  deverá  incluir  um  mecanismo  a executar no arranque da aplicação que permita criar os objetos das várias classes a  partir  de  dados  armazenados  em  ficheiros  de  texto.
+	Por  exemplo,  o  ficheiro usado  para  armazenar  informação  acerca  de  instâncias  da  classe Tarefa que possui  os  atributos  “referência”, “designação”,  “descrição  informal”,  “descrição técnica”, “duração estimada” e “custo estimado”
+	poderá ter o seguinte formato:ref1; designacao1; descrição informal 1; descrição técnica 1; duração 1; custo 1ref2; designacao2; descrição informal 2; descrição técnica 2; duração 2; custo 2...
+	
+	Desta forma, após o arranque da aplicação, existirãoem memória objetos,das várias classes,necessários ao funcionamento da aplicação.	
+
+	Requisistos Funcionais: 
+							1) Implementação das funcionalidades pedidas;
+							2) Implementação de 1 classe que instancie todas as classes necessárias para que as funcionalidades descritas possam ser utilizadas/testadas durante a apresentação;
+							3) Implementação de 1 interface com o utilizador para utilizar as funcionalidades pode ser consola ou gráfica(melhor);
+							4) Implementação de um mecanismo de instanciação de classes a partir do conteúdo de ficheiros de texto, disponibilizados na apresentação para correr todas as funcionalidades;
+							
+	Requisistos Não Funcionais:
+							1) Uso do Java e do Maven;
+							2) Uso do JavaDoc;
+							3) Diagrama de classes em pdf;
+							4) Documento com a descrição das funcionalidades implementadas;
+							5) Implementação de testes unitários com JUNIT, exceto para gets, sets e toStrings, a menos que seja estritamente necessário;
+							6) Geração do relatório de cobertura de testes com o plugin JAVACOCO;
+
+
+
+	

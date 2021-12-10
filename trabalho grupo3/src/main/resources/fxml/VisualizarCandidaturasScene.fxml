@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.dn_tp3_1191513_1181600.ui.VisualizarCandidaturasUI">
+   <top>
+      <HBox prefHeight="32.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Tarefa">
+               <padding>
+                  <Insets right="10.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtTarefaId" editable="false" />
+            <Button fx:id="btnSeriarCandidaturasTarefa" mnemonicParsing="false" onAction="#seriarCandidaturasAction" text="Seriar">
+               <HBox.margin>
+                  <Insets left="150.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="tblCandidaturas" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="colClassificacao" maxWidth="30.0" minWidth="0.0" prefWidth="30.0" resizable="false" text="#" />
+          <TableColumn fx:id="colValor" prefWidth="140.0" text="Valor Pretendido (€)" />
+          <TableColumn fx:id="colDuracao" prefWidth="100.0" text="Duração (dias)" />
+            <TableColumn fx:id="colTextoApresentacao" prefWidth="261.0" text="Texto Apresentação" />
+            <TableColumn fx:id="colTextoMotivacao" prefWidth="284.0" text="Texto Motivação" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
